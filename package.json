@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "npm install --legacy-peer-deps && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -15,8 +15,7 @@
     "nuxt": "^3.10.1",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5",
-    "@nuxt/content": "^2.12.1",
-    "@nuxt/fonts": "^1.0.0"
+    "@nuxt/content": "^2.12.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
