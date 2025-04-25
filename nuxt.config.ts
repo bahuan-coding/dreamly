@@ -11,9 +11,11 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxt/ui-pro'
   ],
   
+  // @ts-ignore
   ui: {
     global: true,
     icons: ['heroicons', 'simple-icons'],
