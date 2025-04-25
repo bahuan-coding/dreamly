@@ -1,0 +1,51 @@
+import { _ as _sfc_main } from './ContentRendererMarkdown.vue3.mjs';
+import { useSSRContext } from 'vue';
+import '../_/nitro.mjs';
+import 'unified';
+import 'remark-parse';
+import 'remark-rehype';
+import 'remark-mdc';
+import 'remark-gfm';
+import 'rehype-external-links';
+import 'rehype-sort-attribute-values';
+import 'rehype-sort-attributes';
+import 'rehype-raw';
+import 'detab';
+import 'micromark-util-sanitize-uri';
+import 'hast-util-to-string';
+import 'github-slugger';
+import 'node:http';
+import 'node:https';
+import 'node:events';
+import 'node:buffer';
+import '@iconify/utils';
+import 'node:crypto';
+import 'consola';
+import 'node:url';
+import 'ipx';
+import 'node:fs';
+import 'node:path';
+import 'property-information';
+import './node.mjs';
+import 'vue/server-renderer';
+import './preview.mjs';
+import './server.mjs';
+import 'vue-router';
+import 'tailwindcss/colors';
+import '../routes/renderer.mjs';
+import 'vue-bundle-renderer/runtime';
+import 'unhead/server';
+import 'unhead/utils';
+import 'devalue';
+import 'unhead/plugins';
+import '@iconify/vue';
+
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+
+export { _sfc_main as default };
+//# sourceMappingURL=ContentRendererMarkdown.vue2.mjs.map

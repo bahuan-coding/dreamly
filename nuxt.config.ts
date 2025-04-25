@@ -8,24 +8,32 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      title: 'Dreamly',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Dreamly - Plataforma de Sorteios e Experiências' }
+      ]
     }
   },
   
   ssr: true,
   
   nitro: {
-    preset: 'netlify'
+    preset: 'netlify',
+    prerender: {
+      crawlLinks: false,
+      routes: ['/']
+    }
   },
 
   modules: [
-    '@nuxt/content',
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxt/test-utils',
     '@nuxt/ui',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@nuxt/icon',
+    '@nuxtjs/google-fonts',
+    '@nuxt/fonts',
     '@nuxt/ui-pro'
   ],
   
@@ -78,5 +86,11 @@ export default defineNuxtConfig({
     provider: 'ipx',
     quality: 80,
     dir: 'public',
+  },
+
+  googleFonts: {
+    families: {
+      Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+    }
   }
 }) 

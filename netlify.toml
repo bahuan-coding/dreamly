@@ -1,12 +1,11 @@
 [build]
-  command = "NODE_OPTIONS=--max_old_space_size=4096 npm run build"
-  publish = ".output/public"
+  command = "npx nuxt generate"
+  publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "18"
-  NPM_FLAGS = "--legacy-peer-deps"
-  NETLIFY_BUILD_DEBUG = "true"
+  NODE_VERSION = "20"
   NODE_OPTIONS = "--max_old_space_size=4096"
+  PNPM_FLAGS = "--shamefully-hoist"
 
 [[redirects]]
   from = "/*"
