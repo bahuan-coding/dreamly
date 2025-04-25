@@ -15,10 +15,9 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro'
   ],
   
-  runtimeConfig: {
-    uiPro: {
-      license: process.env.NUXT_UI_PRO_LICENSE
-    }
+  // @ts-ignore
+  uiPro: {
+    license: 'BEA08C62-811A-4DEF-9DB3-B2B26860FE39'
   },
   
   // @ts-ignore
