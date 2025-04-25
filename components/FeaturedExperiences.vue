@@ -48,11 +48,11 @@ const featuredExperiences = [
     id: 1,
     title: 'Encontro Virtual Íntimo',
     description: 'Uma conversa exclusiva e personalizada para suas fantasias.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+    image: '/images/models/model1.jpg',
     price: '199,90',
     model: {
       name: 'Julia Silva',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+      avatar: '/images/models/model1.jpg'
     },
     rating: 4.9,
     reviewCount: 127
@@ -61,11 +61,11 @@ const featuredExperiences = [
     id: 2,
     title: 'Ensaio Fotográfico Premium',
     description: 'Fotos exclusivas com temas e fantasias personalizadas.',
-    image: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+    image: '/images/models/model2.jpg',
     price: '349,90',
     model: {
       name: 'Amanda Costa',
-      avatar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+      avatar: '/images/models/model2.jpg'
     },
     rating: 4.8,
     reviewCount: 95
@@ -74,11 +74,11 @@ const featuredExperiences = [
     id: 3,
     title: 'Chat de Áudio Sensual',
     description: 'Conversa de áudio imersiva com sua modelo favorita.',
-    image: 'https://images.unsplash.com/photo-1488716820095-cbe80883c496?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+    image: '/images/models/model3.jpg',
     price: '149,90',
     model: {
       name: 'Renata Lima',
-      avatar: 'https://images.unsplash.com/photo-1488716820095-cbe80883c496?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+      avatar: '/images/models/model3.jpg'
     },
     rating: 4.7,
     reviewCount: 83

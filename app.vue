@@ -1,26 +1,38 @@
 <template>
-  <div class="dreamly-app">
-    <AgeVerification />
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup>
-// Import global CSS
-import './assets/css/main.css'
-import AgeVerification from '~/components/AgeVerification.vue'
+// Importa o CSS global
+import '~/assets/css/main.css'
 </script>
 
 <style>
-.dreamly-app {
+/* Reset adicional e estilos globais */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+#__nuxt {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-html {
-  scroll-behavior: smooth;
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
 }
 </style> 

@@ -3,6 +3,20 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 
+  app: {
+    baseURL: '/',
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    }
+  },
+  
+  ssr: true,
+  
+  nitro: {
+    preset: 'netlify'
+  },
+
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -57,5 +71,12 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+  
+  image: {
+    // Configurações para o módulo de imagem
+    provider: 'ipx',
+    quality: 80,
+    dir: 'public',
   }
 }) 
